@@ -1,0 +1,20 @@
+/obj//cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/manage/batch_func.o:  \
+ /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/manage/batch_func.c \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/manage/manage_func.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/manage/batch_data.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/manage/batch_func.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal\data\data_trans.h \
+  /cygdrive/D/PosPlatform/m90s/pub\tlv\tlv_func.h \
+  /cygdrive/D/PosPlatform/m90s/pub\pub.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/admin\setting\admin_set_func.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal\comm\comm_proc.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal\comm\/comm_define.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal\data\data_define.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/page\commpage\comm_page.h \
+  /cygdrive/D/PosPlatform/m90s/xGui/inc/messagebox.h \
+  /cygdrive/D/PosPlatform/m90s/xGui/inc/xgui_pub.h \
+  /cygdrive/D/PosPlatform/m90s/xGui\inc\messagebox.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal\data\record\record_data.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/pub\appdef.h \
+  /cygdrive/D/PosPlatform/m90s/pub\common\misc\inc\mfmalloc.h \
+  /cygdrive/D/PosPlatform/m90s/pub\osl\inc\osl_BaseParam.h

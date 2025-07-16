@@ -1,0 +1,19 @@
+/obj//cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/print/print_management.o:  \
+ /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/print/print_management.c \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/print/print_func.h \
+  /cygdrive/D/PosPlatform/m90s/pub/tlv/tlv_func.h \
+  /cygdrive/D/PosPlatform/m90s/pub\pub.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/print/print_management.h \
+  /cygdrive/D/PosPlatform/m90s/pub\osl\inc\osl_print.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/admin\setting\admin_set_func.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal\data\data_define.h \
+  /cygdrive/D/PosPlatform/m90s/emv/inc/emv_tag.h \
+  /cygdrive/D/PosPlatform/m90s/Platform/inc/driver\mf_rtc.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal\data\record\record_data.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal\data\data_trans.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal\data\data_reversed.h \
+  /cygdrive/D/PosPlatform/m90s/pub/osl/inc/osl_time.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/page\commpage\comm_page.h \
+  /cygdrive/D/PosPlatform/m90s/xGui/inc/messagebox.h \
+  /cygdrive/D/PosPlatform/m90s/xGui/inc/xgui_pub.h \
+  /cygdrive/D/PosPlatform/m90s/pub\common\misc\inc\mfmalloc.h

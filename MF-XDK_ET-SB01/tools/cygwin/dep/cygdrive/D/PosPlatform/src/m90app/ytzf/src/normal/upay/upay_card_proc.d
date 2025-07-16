@@ -1,0 +1,25 @@
+/obj//cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/upay/upay_card_proc.o:  \
+ /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/upay/upay_card_proc.c \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/pub/appdef.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/page\upaypage\inputcard_page.h \
+  /cygdrive/D/PosPlatform/m90s/Platform/inc/driver\mf_magtek.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal\upay\upay_define.h \
+  /cygdrive/D/PosPlatform/m90s/pub\tlv\tlv_func.h \
+  /cygdrive/D/PosPlatform/m90s/pub\pub.h \
+  /cygdrive/D/PosPlatform/m90s/Platform/inc/driver/mf_misc.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal\card\card_track.h \
+  /cygdrive/D/PosPlatform/m90s/Platform/inc/driver\mf_magtek.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/admin\setting\admin_set_func.h \
+  /cygdrive/D/PosPlatform/m90s/xGui\inc\messagebox.h \
+  /cygdrive/D/PosPlatform/m90s/xGui\inc\/xgui_pub.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/page/upaypage/inputdate_YYMM_page.h \
+  /cygdrive/D/PosPlatform/m90s/AppPub/upaypage/ap_inputdate_YYMM_page.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/page/upaypage/input_public.h \
+  /cygdrive/D/PosPlatform/m90s/AppPub/inc/pub_define.h \
+  /cygdrive/D/PosPlatform/m90s/pub/common/misc/inc/mfmalloc.h \
+  /cygdrive/D/PosPlatform/m90s/AppPub/inc/pub_def.h \
+  /cygdrive/D/PosPlatform/m90s/AppPub/inc/mf_basic.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal\data\data_define.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/page\commpage\comm_page.h \
+  /cygdrive/D/PosPlatform/m90s/xGui/inc/messagebox.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal\upay\base\upay_auto_test.h

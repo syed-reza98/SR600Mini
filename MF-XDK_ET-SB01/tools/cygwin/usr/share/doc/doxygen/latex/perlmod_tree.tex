@@ -1,0 +1,368 @@
+\subsection*{Nodes in the documentation tree of the Perl Module output format.}
+
+This is a description of the structure of the documentation tree in {\bfseries DoxyDocs.pm}. Each item in the list below describes a node in the tree, and the format of the description is as follows:
+
+
+\begin{DoxyItemize}
+\item \mbox{[} key =$>$ \mbox{]} {\bfseries Name} {\itshape (type)\/}. Explanation of the content. 
+\end{DoxyItemize}
+
+Where
+
+
+\begin{DoxyItemize}
+\item The \char`\"{}key =\&gt;\char`\"{} part only appears if the parent node is a hash. \char`\"{}key\char`\"{} is the key for this node.
+
+
+\item {\bfseries \char`\"{}Name\char`\"{}} is a unique name for the node, defined in DoxyModel.pm.
+
+
+\item {\itshape \char`\"{}(type)\char`\"{}\/} is the type of the node: \char`\"{}string\char`\"{} for string nodes, \char`\"{}hash\char`\"{} for hash nodes, \char`\"{}list\char`\"{} for list nodes, and \char`\"{}doc\char`\"{} for documentation subtrees. The structure of documentation subtrees is not described anywhere yet, but you can look for example at {\bfseries doxylatex.pl} to see how to process it.
+
+
+\end{DoxyItemize}
+
+The meaning of each node in the documentation tree is as follows: 
+\begin{DoxyItemize}
+\item {\bfseries Root} {\itshape (hash)\/}. Root node. 
+\begin{DoxyItemize}
+\item classes =$>$ {\bfseries Classes} {\itshape (list)\/}. Documented classes. 
+\begin{DoxyItemize}
+\item {\bfseries Class} {\itshape (hash)\/}. A documented class. 
+\begin{DoxyItemize}
+\item protected\_\-members =$>$ {\bfseries ClassProtectedMembers} {\itshape (hash)\/}. Information about the protected members in the class. 
+\begin{DoxyItemize}
+\item members =$>$ {\bfseries ClassProtectedMemberList} {\itshape (list)\/}. protected member list. 
+\begin{DoxyItemize}
+\item {\bfseries ClassProtectedMember} {\itshape (hash)\/}. A protected member. 
+\begin{DoxyItemize}
+\item protection =$>$ {\bfseries ClassProtectedMemberProtection} {\itshape (string)\/}. Protection of the protected member. 
+\item detailed =$>$ {\bfseries ClassProtectedMemberDetailed} {\itshape (hash)\/}. Detailed information about the protected member. 
+\begin{DoxyItemize}
+\item doc =$>$ {\bfseries ClassProtectedMemberDetailedDoc} {\itshape (doc)\/}. Detailed documentation for the protected member. 
+\item see =$>$ {\bfseries ClassProtectedMemberSee} {\itshape (doc)\/}. \char`\"{}See also\char`\"{} documentation for the protected member. 
+\end{DoxyItemize}
+\item kind =$>$ {\bfseries ClassProtectedMemberKind} {\itshape (string)\/}. Kind of protected member (usually \char`\"{}variable\char`\"{}). 
+\item name =$>$ {\bfseries ClassProtectedMemberName} {\itshape (string)\/}. Name of the protected member. 
+\item type =$>$ {\bfseries ClassProtectedMemberType} {\itshape (string)\/}. Data type of the protected member. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item detailed =$>$ {\bfseries ClassDetailed} {\itshape (hash)\/}. Detailed information about the class. 
+\begin{DoxyItemize}
+\item doc =$>$ {\bfseries ClassDetailedDoc} {\itshape (doc)\/}. Detailed documentation block for the class. 
+\end{DoxyItemize}
+\item protected\_\-typedefs =$>$ {\bfseries ClassProtectedTypedefs} {\itshape (hash)\/}. Information about the protected typedefs in the class. 
+\begin{DoxyItemize}
+\item members =$>$ {\bfseries ClassProtectedTypedefList} {\itshape (list)\/}. protected typedef list. 
+\begin{DoxyItemize}
+\item {\bfseries ClassProtectedTypedef} {\itshape (hash)\/}. A protected typedef. 
+\begin{DoxyItemize}
+\item protection =$>$ {\bfseries ClassProtectedTypedefProtection} {\itshape (string)\/}. Protection of the protected typedef. 
+\item detailed =$>$ {\bfseries ClassProtectedTypedefDetailed} {\itshape (hash)\/}. Detailed information about the protected typedef. 
+\begin{DoxyItemize}
+\item doc =$>$ {\bfseries ClassProtectedTypedefDetailedDoc} {\itshape (doc)\/}. Detailed documentation for the protected typedef. 
+\item see =$>$ {\bfseries ClassProtectedTypedefSee} {\itshape (doc)\/}. \char`\"{}See also\char`\"{} documentation for the protected typedef. 
+\end{DoxyItemize}
+\item kind =$>$ {\bfseries ClassProtectedTypedefKind} {\itshape (string)\/}. Kind of protected typedef (usually \char`\"{}typedef\char`\"{}). 
+\item name =$>$ {\bfseries ClassProtectedTypedefName} {\itshape (string)\/}. Name of the protected typedef. 
+\item type =$>$ {\bfseries ClassProtectedTypedefType} {\itshape (string)\/}. Data type of the protected typedef. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item name =$>$ {\bfseries ClassName} {\itshape (string)\/}. Name of the class. 
+\item private\_\-members =$>$ {\bfseries ClassPrivateMembers} {\itshape (hash)\/}. Information about the private members in the class. 
+\begin{DoxyItemize}
+\item members =$>$ {\bfseries ClassPrivateMemberList} {\itshape (list)\/}. private member list. 
+\begin{DoxyItemize}
+\item {\bfseries ClassPrivateMember} {\itshape (hash)\/}. A private member. 
+\begin{DoxyItemize}
+\item protection =$>$ {\bfseries ClassPrivateMemberProtection} {\itshape (string)\/}. Protection of the private member. 
+\item detailed =$>$ {\bfseries ClassPrivateMemberDetailed} {\itshape (hash)\/}. Detailed information about the private member. 
+\begin{DoxyItemize}
+\item doc =$>$ {\bfseries ClassPrivateMemberDetailedDoc} {\itshape (doc)\/}. Detailed documentation for the private member. 
+\item see =$>$ {\bfseries ClassPrivateMemberSee} {\itshape (doc)\/}. \char`\"{}See also\char`\"{} documentation for the private member. 
+\end{DoxyItemize}
+\item kind =$>$ {\bfseries ClassPrivateMemberKind} {\itshape (string)\/}. Kind of private member (usually \char`\"{}variable\char`\"{}). 
+\item name =$>$ {\bfseries ClassPrivateMemberName} {\itshape (string)\/}. Name of the private member. 
+\item type =$>$ {\bfseries ClassPrivateMemberType} {\itshape (string)\/}. Data type of the private member. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item private\_\-typedefs =$>$ {\bfseries ClassPrivateTypedefs} {\itshape (hash)\/}. Information about the private typedefs in the class. 
+\begin{DoxyItemize}
+\item members =$>$ {\bfseries ClassPrivateTypedefList} {\itshape (list)\/}. private typedef list. 
+\begin{DoxyItemize}
+\item {\bfseries ClassPrivateTypedef} {\itshape (hash)\/}. A private typedef. 
+\begin{DoxyItemize}
+\item protection =$>$ {\bfseries ClassPrivateTypedefProtection} {\itshape (string)\/}. Protection of the private typedef. 
+\item detailed =$>$ {\bfseries ClassPrivateTypedefDetailed} {\itshape (hash)\/}. Detailed information about the private typedef. 
+\begin{DoxyItemize}
+\item doc =$>$ {\bfseries ClassPrivateTypedefDetailedDoc} {\itshape (doc)\/}. Detailed documentation for the private typedef. 
+\item see =$>$ {\bfseries ClassPrivateTypedefSee} {\itshape (doc)\/}. \char`\"{}See also\char`\"{} documentation for the private typedef. 
+\end{DoxyItemize}
+\item kind =$>$ {\bfseries ClassPrivateTypedefKind} {\itshape (string)\/}. Kind of private typedef (usually \char`\"{}typedef\char`\"{}). 
+\item name =$>$ {\bfseries ClassPrivateTypedefName} {\itshape (string)\/}. Name of the private typedef. 
+\item type =$>$ {\bfseries ClassPrivateTypedefType} {\itshape (string)\/}. Data type of the private typedef. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item protected\_\-methods =$>$ {\bfseries ClassProtectedMethods} {\itshape (hash)\/}. Information about the protected methods in the class. 
+\begin{DoxyItemize}
+\item members =$>$ {\bfseries ClassProtectedMethodList} {\itshape (list)\/}. protected method list. 
+\begin{DoxyItemize}
+\item {\bfseries ClassProtectedMethod} {\itshape (hash)\/}. A protected method. 
+\begin{DoxyItemize}
+\item parameters =$>$ {\bfseries ClassProtectedMethodParams} {\itshape (list)\/}. List of the parameters of the protected method. 
+\begin{DoxyItemize}
+\item {\bfseries ClassProtectedMethodParam} {\itshape (hash)\/}. A parameter of the protected method. 
+\begin{DoxyItemize}
+\item declaration\_\-name =$>$ {\bfseries ClassProtectedMethodParamName} {\itshape (string)\/}. The name of the parameter. 
+\item type =$>$ {\bfseries ClassProtectedMethodParamType} {\itshape (string)\/}. The data type of the parameter. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item protection =$>$ {\bfseries ClassProtectedMethodProtection} {\itshape (string)\/}. Protection of the protected method. 
+\item virtualness =$>$ {\bfseries ClassProtectedMethodVirtualness} {\itshape (string)\/}. Virtualness of the protected method. 
+\item detailed =$>$ {\bfseries ClassProtectedMethodDetailed} {\itshape (hash)\/}. Detailed information about the protected method. 
+\begin{DoxyItemize}
+\item params =$>$ {\bfseries ClassProtectedMethodPDBlocks} {\itshape (list)\/}. List of parameter documentation blocks for the protected method. 
+\begin{DoxyItemize}
+\item {\bfseries ClassProtectedMethodPDBlock} {\itshape (hash)\/}. A parameter documentation block for the protected method. 
+\begin{DoxyItemize}
+\item parameters =$>$ {\bfseries ClassProtectedMethodPDParams} {\itshape (list)\/}. Parameter list for this parameter documentation block. 
+\begin{DoxyItemize}
+\item {\bfseries ClassProtectedMethodPDParam} {\itshape (hash)\/}. A parameter documented by this documentation block. 
+\begin{DoxyItemize}
+\item name =$>$ {\bfseries ClassProtectedMethodPDParamName} {\itshape (string)\/}. Name of the parameter. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item doc =$>$ {\bfseries ClassProtectedMethodPDDoc} {\itshape (doc)\/}. Documentation for this parameter documentation block. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item doc =$>$ {\bfseries ClassProtectedMethodDetailedDoc} {\itshape (doc)\/}. Detailed documentation for the protected method. 
+\item see =$>$ {\bfseries ClassProtectedMethodSee} {\itshape (doc)\/}. \char`\"{}See also\char`\"{} documentation for the protected method. 
+\item return =$>$ {\bfseries ClassProtectedMethodReturn} {\itshape (doc)\/}. Documentation about the return value of the protected method. 
+\end{DoxyItemize}
+\item kind =$>$ {\bfseries ClassProtectedMethodKind} {\itshape (string)\/}. Kind of protected method (usually \char`\"{}function\char`\"{}). 
+\item name =$>$ {\bfseries ClassProtectedMethodName} {\itshape (string)\/}. Name of the protected method. 
+\item type =$>$ {\bfseries ClassProtectedMethodType} {\itshape (string)\/}. Data type returned by the protected method. 
+\item static =$>$ {\bfseries ClassProtectedMethodStatic} {\itshape (string)\/}. Whether the protected method is static. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item public\_\-typedefs =$>$ {\bfseries ClassPublicTypedefs} {\itshape (hash)\/}. Information about the public typedefs in the class. 
+\begin{DoxyItemize}
+\item members =$>$ {\bfseries ClassPublicTypedefList} {\itshape (list)\/}. public typedef list. 
+\begin{DoxyItemize}
+\item {\bfseries ClassPublicTypedef} {\itshape (hash)\/}. A public typedef. 
+\begin{DoxyItemize}
+\item protection =$>$ {\bfseries ClassPublicTypedefProtection} {\itshape (string)\/}. Protection of the public typedef. 
+\item detailed =$>$ {\bfseries ClassPublicTypedefDetailed} {\itshape (hash)\/}. Detailed information about the public typedef. 
+\begin{DoxyItemize}
+\item doc =$>$ {\bfseries ClassPublicTypedefDetailedDoc} {\itshape (doc)\/}. Detailed documentation for the public typedef. 
+\item see =$>$ {\bfseries ClassPublicTypedefSee} {\itshape (doc)\/}. \char`\"{}See also\char`\"{} documentation for the public typedef. 
+\end{DoxyItemize}
+\item kind =$>$ {\bfseries ClassPublicTypedefKind} {\itshape (string)\/}. Kind of public typedef (usually \char`\"{}typedef\char`\"{}). 
+\item name =$>$ {\bfseries ClassPublicTypedefName} {\itshape (string)\/}. Name of the public typedef. 
+\item type =$>$ {\bfseries ClassPublicTypedefType} {\itshape (string)\/}. Data type of the public typedef. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item public\_\-members =$>$ {\bfseries ClassPublicMembers} {\itshape (hash)\/}. Information about the public members in the class. 
+\begin{DoxyItemize}
+\item members =$>$ {\bfseries ClassPublicMemberList} {\itshape (list)\/}. public member list. 
+\begin{DoxyItemize}
+\item {\bfseries ClassPublicMember} {\itshape (hash)\/}. A public member. 
+\begin{DoxyItemize}
+\item protection =$>$ {\bfseries ClassPublicMemberProtection} {\itshape (string)\/}. Protection of the public member. 
+\item detailed =$>$ {\bfseries ClassPublicMemberDetailed} {\itshape (hash)\/}. Detailed information about the public member. 
+\begin{DoxyItemize}
+\item doc =$>$ {\bfseries ClassPublicMemberDetailedDoc} {\itshape (doc)\/}. Detailed documentation for the public member. 
+\item see =$>$ {\bfseries ClassPublicMemberSee} {\itshape (doc)\/}. \char`\"{}See also\char`\"{} documentation for the public member. 
+\end{DoxyItemize}
+\item kind =$>$ {\bfseries ClassPublicMemberKind} {\itshape (string)\/}. Kind of public member (usually \char`\"{}variable\char`\"{}). 
+\item name =$>$ {\bfseries ClassPublicMemberName} {\itshape (string)\/}. Name of the public member. 
+\item type =$>$ {\bfseries ClassPublicMemberType} {\itshape (string)\/}. Data type of the public member. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item private\_\-methods =$>$ {\bfseries ClassPrivateMethods} {\itshape (hash)\/}. Information about the private methods in the class. 
+\begin{DoxyItemize}
+\item members =$>$ {\bfseries ClassPrivateMethodList} {\itshape (list)\/}. private method list. 
+\begin{DoxyItemize}
+\item {\bfseries ClassPrivateMethod} {\itshape (hash)\/}. A private method. 
+\begin{DoxyItemize}
+\item parameters =$>$ {\bfseries ClassPrivateMethodParams} {\itshape (list)\/}. List of the parameters of the private method. 
+\begin{DoxyItemize}
+\item {\bfseries ClassPrivateMethodParam} {\itshape (hash)\/}. A parameter of the private method. 
+\begin{DoxyItemize}
+\item declaration\_\-name =$>$ {\bfseries ClassPrivateMethodParamName} {\itshape (string)\/}. The name of the parameter. 
+\item type =$>$ {\bfseries ClassPrivateMethodParamType} {\itshape (string)\/}. The data type of the parameter. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item protection =$>$ {\bfseries ClassPrivateMethodProtection} {\itshape (string)\/}. Protection of the private method. 
+\item virtualness =$>$ {\bfseries ClassPrivateMethodVirtualness} {\itshape (string)\/}. Virtualness of the private method. 
+\item detailed =$>$ {\bfseries ClassPrivateMethodDetailed} {\itshape (hash)\/}. Detailed information about the private method. 
+\begin{DoxyItemize}
+\item params =$>$ {\bfseries ClassPrivateMethodPDBlocks} {\itshape (list)\/}. List of parameter documentation blocks for the private method. 
+\begin{DoxyItemize}
+\item {\bfseries ClassPrivateMethodPDBlock} {\itshape (hash)\/}. A parameter documentation block for the private method. 
+\begin{DoxyItemize}
+\item parameters =$>$ {\bfseries ClassPrivateMethodPDParams} {\itshape (list)\/}. Parameter list for this parameter documentation block. 
+\begin{DoxyItemize}
+\item {\bfseries ClassPrivateMethodPDParam} {\itshape (hash)\/}. A parameter documented by this documentation block. 
+\begin{DoxyItemize}
+\item name =$>$ {\bfseries ClassPrivateMethodPDParamName} {\itshape (string)\/}. Name of the parameter. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item doc =$>$ {\bfseries ClassPrivateMethodPDDoc} {\itshape (doc)\/}. Documentation for this parameter documentation block. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item doc =$>$ {\bfseries ClassPrivateMethodDetailedDoc} {\itshape (doc)\/}. Detailed documentation for the private method. 
+\item see =$>$ {\bfseries ClassPrivateMethodSee} {\itshape (doc)\/}. \char`\"{}See also\char`\"{} documentation for the private method. 
+\item return =$>$ {\bfseries ClassPrivateMethodReturn} {\itshape (doc)\/}. Documentation about the return value of the private method. 
+\end{DoxyItemize}
+\item kind =$>$ {\bfseries ClassPrivateMethodKind} {\itshape (string)\/}. Kind of private method (usually \char`\"{}function\char`\"{}). 
+\item name =$>$ {\bfseries ClassPrivateMethodName} {\itshape (string)\/}. Name of the private method. 
+\item type =$>$ {\bfseries ClassPrivateMethodType} {\itshape (string)\/}. Data type returned by the private method. 
+\item static =$>$ {\bfseries ClassPrivateMethodStatic} {\itshape (string)\/}. Whether the private method is static. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item public\_\-methods =$>$ {\bfseries ClassPublicMethods} {\itshape (hash)\/}. Information about the public methods in the class. 
+\begin{DoxyItemize}
+\item members =$>$ {\bfseries ClassPublicMethodList} {\itshape (list)\/}. public method list. 
+\begin{DoxyItemize}
+\item {\bfseries ClassPublicMethod} {\itshape (hash)\/}. A public method. 
+\begin{DoxyItemize}
+\item parameters =$>$ {\bfseries ClassPublicMethodParams} {\itshape (list)\/}. List of the parameters of the public method. 
+\begin{DoxyItemize}
+\item {\bfseries ClassPublicMethodParam} {\itshape (hash)\/}. A parameter of the public method. 
+\begin{DoxyItemize}
+\item declaration\_\-name =$>$ {\bfseries ClassPublicMethodParamName} {\itshape (string)\/}. The name of the parameter. 
+\item type =$>$ {\bfseries ClassPublicMethodParamType} {\itshape (string)\/}. The data type of the parameter. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item protection =$>$ {\bfseries ClassPublicMethodProtection} {\itshape (string)\/}. Protection of the public method. 
+\item virtualness =$>$ {\bfseries ClassPublicMethodVirtualness} {\itshape (string)\/}. Virtualness of the public method. 
+\item detailed =$>$ {\bfseries ClassPublicMethodDetailed} {\itshape (hash)\/}. Detailed information about the public method. 
+\begin{DoxyItemize}
+\item params =$>$ {\bfseries ClassPublicMethodPDBlocks} {\itshape (list)\/}. List of parameter documentation blocks for the public method. 
+\begin{DoxyItemize}
+\item {\bfseries ClassPublicMethodPDBlock} {\itshape (hash)\/}. A parameter documentation block for the public method. 
+\begin{DoxyItemize}
+\item parameters =$>$ {\bfseries ClassPublicMethodPDParams} {\itshape (list)\/}. Parameter list for this parameter documentation block. 
+\begin{DoxyItemize}
+\item {\bfseries ClassPublicMethodPDParam} {\itshape (hash)\/}. A parameter documented by this documentation block. 
+\begin{DoxyItemize}
+\item name =$>$ {\bfseries ClassPublicMethodPDParamName} {\itshape (string)\/}. Name of the parameter. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item doc =$>$ {\bfseries ClassPublicMethodPDDoc} {\itshape (doc)\/}. Documentation for this parameter documentation block. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item doc =$>$ {\bfseries ClassPublicMethodDetailedDoc} {\itshape (doc)\/}. Detailed documentation for the public method. 
+\item see =$>$ {\bfseries ClassPublicMethodSee} {\itshape (doc)\/}. \char`\"{}See also\char`\"{} documentation for the public method. 
+\item return =$>$ {\bfseries ClassPublicMethodReturn} {\itshape (doc)\/}. Documentation about the return value of the public method. 
+\end{DoxyItemize}
+\item kind =$>$ {\bfseries ClassPublicMethodKind} {\itshape (string)\/}. Kind of public method (usually \char`\"{}function\char`\"{}). 
+\item name =$>$ {\bfseries ClassPublicMethodName} {\itshape (string)\/}. Name of the public method. 
+\item type =$>$ {\bfseries ClassPublicMethodType} {\itshape (string)\/}. Data type returned by the public method. 
+\item static =$>$ {\bfseries ClassPublicMethodStatic} {\itshape (string)\/}. Whether the public method is static. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item files =$>$ {\bfseries Files} {\itshape (list)\/}. Documented files. 
+\begin{DoxyItemize}
+\item {\bfseries File} {\itshape (hash)\/}. A documented file. 
+\begin{DoxyItemize}
+\item detailed =$>$ {\bfseries FileDetailed} {\itshape (hash)\/}. Detailed information about the file. 
+\begin{DoxyItemize}
+\item doc =$>$ {\bfseries FileDetailedDoc} {\itshape (doc)\/}. Detailed documentation block for the file. 
+\end{DoxyItemize}
+\item functions =$>$ {\bfseries FileFunctions} {\itshape (hash)\/}. Information about the functions in the file. 
+\begin{DoxyItemize}
+\item members =$>$ {\bfseries FileFunctionList} {\itshape (list)\/}. function list. 
+\begin{DoxyItemize}
+\item {\bfseries FileFunction} {\itshape (hash)\/}. A function. 
+\begin{DoxyItemize}
+\item parameters =$>$ {\bfseries FileFunctionParams} {\itshape (list)\/}. List of the parameters of the function. 
+\begin{DoxyItemize}
+\item {\bfseries FileFunctionParam} {\itshape (hash)\/}. A parameter of the function. 
+\begin{DoxyItemize}
+\item declaration\_\-name =$>$ {\bfseries FileFunctionParamName} {\itshape (string)\/}. The name of the parameter. 
+\item type =$>$ {\bfseries FileFunctionParamType} {\itshape (string)\/}. The data type of the parameter. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item protection =$>$ {\bfseries FileFunctionProtection} {\itshape (string)\/}. Protection of the function. 
+\item virtualness =$>$ {\bfseries FileFunctionVirtualness} {\itshape (string)\/}. Virtualness of the function. 
+\item detailed =$>$ {\bfseries FileFunctionDetailed} {\itshape (hash)\/}. Detailed information about the function. 
+\begin{DoxyItemize}
+\item params =$>$ {\bfseries FileFunctionPDBlocks} {\itshape (list)\/}. List of parameter documentation blocks for the function. 
+\begin{DoxyItemize}
+\item {\bfseries FileFunctionPDBlock} {\itshape (hash)\/}. A parameter documentation block for the function. 
+\begin{DoxyItemize}
+\item parameters =$>$ {\bfseries FileFunctionPDParams} {\itshape (list)\/}. Parameter list for this parameter documentation block. 
+\begin{DoxyItemize}
+\item {\bfseries FileFunctionPDParam} {\itshape (hash)\/}. A parameter documented by this documentation block. 
+\begin{DoxyItemize}
+\item name =$>$ {\bfseries FileFunctionPDParamName} {\itshape (string)\/}. Name of the parameter. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item doc =$>$ {\bfseries FileFunctionPDDoc} {\itshape (doc)\/}. Documentation for this parameter documentation block. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item doc =$>$ {\bfseries FileFunctionDetailedDoc} {\itshape (doc)\/}. Detailed documentation for the function. 
+\item see =$>$ {\bfseries FileFunctionSee} {\itshape (doc)\/}. \char`\"{}See also\char`\"{} documentation for the function. 
+\item return =$>$ {\bfseries FileFunctionReturn} {\itshape (doc)\/}. Documentation about the return value of the function. 
+\end{DoxyItemize}
+\item kind =$>$ {\bfseries FileFunctionKind} {\itshape (string)\/}. Kind of function (usually \char`\"{}function\char`\"{}). 
+\item name =$>$ {\bfseries FileFunctionName} {\itshape (string)\/}. Name of the function. 
+\item type =$>$ {\bfseries FileFunctionType} {\itshape (string)\/}. Data type returned by the function. 
+\item static =$>$ {\bfseries FileFunctionStatic} {\itshape (string)\/}. Whether the function is static. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item name =$>$ {\bfseries FileName} {\itshape (string)\/}. Name of the file. 
+\item variables =$>$ {\bfseries FileVariables} {\itshape (hash)\/}. Information about the variables in the file. 
+\begin{DoxyItemize}
+\item members =$>$ {\bfseries FileVariableList} {\itshape (list)\/}. variable list. 
+\begin{DoxyItemize}
+\item {\bfseries FileVariable} {\itshape (hash)\/}. A variable. 
+\begin{DoxyItemize}
+\item protection =$>$ {\bfseries FileVariableProtection} {\itshape (string)\/}. Protection of the variable. 
+\item detailed =$>$ {\bfseries FileVariableDetailed} {\itshape (hash)\/}. Detailed information about the variable. 
+\begin{DoxyItemize}
+\item doc =$>$ {\bfseries FileVariableDetailedDoc} {\itshape (doc)\/}. Detailed documentation for the variable. 
+\item see =$>$ {\bfseries FileVariableSee} {\itshape (doc)\/}. \char`\"{}See also\char`\"{} documentation for the variable. 
+\end{DoxyItemize}
+\item kind =$>$ {\bfseries FileVariableKind} {\itshape (string)\/}. Kind of variable (usually \char`\"{}variable\char`\"{}). 
+\item name =$>$ {\bfseries FileVariableName} {\itshape (string)\/}. Name of the variable. 
+\item type =$>$ {\bfseries FileVariableType} {\itshape (string)\/}. Data type of the variable. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item typedefs =$>$ {\bfseries FileTypedefs} {\itshape (hash)\/}. Information about the typedefs in the file. 
+\begin{DoxyItemize}
+\item members =$>$ {\bfseries FileTypedefList} {\itshape (list)\/}. typedef list. 
+\begin{DoxyItemize}
+\item {\bfseries FileTypedef} {\itshape (hash)\/}. A typedef. 
+\begin{DoxyItemize}
+\item protection =$>$ {\bfseries FileTypedefProtection} {\itshape (string)\/}. Protection of the typedef. 
+\item detailed =$>$ {\bfseries FileTypedefDetailed} {\itshape (hash)\/}. Detailed information about the typedef. 
+\begin{DoxyItemize}
+\item doc =$>$ {\bfseries FileTypedefDetailedDoc} {\itshape (doc)\/}. Detailed documentation for the typedef. 
+\item see =$>$ {\bfseries FileTypedefSee} {\itshape (doc)\/}. \char`\"{}See also\char`\"{} documentation for the typedef. 
+\end{DoxyItemize}
+\item kind =$>$ {\bfseries FileTypedefKind} {\itshape (string)\/}. Kind of typedef (usually \char`\"{}typedef\char`\"{}). 
+\item name =$>$ {\bfseries FileTypedefName} {\itshape (string)\/}. Name of the typedef. 
+\item type =$>$ {\bfseries FileTypedefType} {\itshape (string)\/}. Data type of the typedef. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}

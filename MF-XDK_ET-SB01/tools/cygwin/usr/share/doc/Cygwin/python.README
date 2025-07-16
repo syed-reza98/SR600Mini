@@ -1,0 +1,182 @@
+$Id: README,v 1.2 2010/06/12 20:14:32 jt Exp $
+
+Abstract:
+
+This is the README for the Cygwin Python distribution.
+
+Python is an interpreted, interactive, object-oriented programming
+language often compared to Tcl, Perl, Scheme or Java. Python includes
+modules, classes, exceptions, very high level dynamic data types and
+dynamic typing. Python supports interfaces to many system calls and
+libraries, as well as to various windowing systems (X11, Motif, Tk,
+Mac and MFC).
+
+As of Cygwin Python 2.5.5-1, the port is built against Cygwin 1.7 using
+cygport and has been split into multiple packages.  Many thanks to
+Yaakov Selkowitz for the cygport build system and his Python cygport
+script and patches.
+
+As of Cygwin Python 2.4.3-1, the port has pthread-related issues that
+cause some threading features to fail (at least occassionally).  AFAICT,
+this is due to a change in the Cygwin DLL some time after 1.5.18.  See
+the test section for more details.
+
+As of Cygwin Python 2.3.3-2, all known 64-bit I/O issues have been
+resolved.
+
+As of Cygwin Python 2.2.2-3, it is assumed that your Cygwin system has
+been rebased in order to prevent fork() failures due to DLL base address
+conflicts.  Previous versions worked around this issue by building the
+_socket module statically.  This hack no longer works with current
+Cygwin versions.  See the issues section for more details.
+
+As of Cygwin Python 2.2.1-1, the port supports threading.  Many thanks
+to Rob Collins (and others) who enhanced Cygwin's pthreads support to
+the level needed by Python.
+
+Additionally, the package now includes the HTML version of the full Python
+documentation.
+
+As of Cygwin Python 2.1.1-2, the port is essentially complete (at least
+for Windows NT 4.0 and 2000).  The most notable changes are the addition
+of the _tkinter module and the elimination of the test_poll hang.
+
+As of Cygwin Python 2.1, the port is built with a DLL core very similar
+to how the Win32 port is built.  This enables Cygwin Python to support
+building shared extensions with the traditional Misc/Makefile.pre.in
+and the newer distutils methods.
+
+Requirements:
+
+The following packages or later are required to run Cygwin Python:
+
+    crypt-1.1-1
+    cygwin-1.7.1-1
+    libbz2_1-1.0.5-10
+    libdb4.5-4.5.20.2-2
+    libexpat1-2.0.1-1
+    libgcc1-4.3.2-3
+    libgdbm4-1.8.3-20
+    libintl8-0.17-11
+    libncursesw10-5.7-18
+    libreadline7-6.0.3-2
+    libsqlite3_0-3.6.21-3
+    openssl-0.9.8l-2
+    tcltk-20080420-1
+    zlib0-1.2.3-10
+
+The following packages or later are required to build Cygwin Python:
+
+    (corresponding -devel packages to the above runtime packages)
+    autoconf2.5-2.65-1
+    automake1.9-1.9.6-10
+    binutils-2.19.51-1
+    cygport-0.9.80-1
+    gawk-3.1.7-1
+    gcc-core-4.3.4-3
+    make-3.81-2
+    sed-4.1.5-2
+
+Install:
+
+Cygwin Python does not require any special installation procedures.
+However, _tkinter users should see the issues section.
+
+Source:
+
+As configured, the Python source essentially builds OOTB under Cygwin.
+However, the following patches have been applied:
+
+    07_all_internal_expat.patch
+    2.5.2-ctypes-util-find_library.patch
+    2.5.2-destdir.patch
+    2.5.2-no-libm.patch
+    2.5.5-ncurses.patch
+    2.5.5-tkinter-win32.patch
+    2.6.1-dbm.patch
+    2.6.2-ssl-threads.patch
+    2.6.5-export-PySignal_SetWakeupFd.patch
+    2.6.5-platdir.patch
+    2.6.5-system-libffi.patch
+
+Build:
+
+The following are the build instructions:
+
+1. Change directory to where the source package is located.  If Cygwin's
+setup.exe was used to install it, then the directory will be /usr/src.
+
+   $ cd /usr/src
+
+2. Unpack the source package
+
+   $ tar -xf python-${version}-src.tar.bz2
+
+3. Build the binary package
+
+   $ cygport python-${version}.cygport all
+
+Note that "${version}" above should be replace with the actual version,
+for example, 2.5.5-10.
+
+Test:
+
+Under XP Pro SP2, Cygwin 1.5.24-2, ntsec, and NTFS, Cygwin Python passes
+most normal (i.e., non "-u" option) tests.  Unfortunately, some of the
+threading-related tests can cause the regression test to abort without
+any error messages.  If one excludes these tests, then the regression
+test will run to completion.  Additionally, if these tests are run
+individually, then they will pass.
+
+Issues:
+
+The following are the known Cygwin Python issues:
+
+1. The _tkinter extension module will only be built if the xorg-x11-devel
+package is installed.
+
+2. Due to issues with Cygwin's fork() and DLL base address conflicts,
+one should rebase their Cygwin system to prevent fork() failures.  Use
+the following procedure to rebase your system:
+
+    a. install the Cygwin rebase package (if necessary)
+    b. shutdown all Cygwin processes
+    c. start bash (do not use rxvt)
+    d. execute rebaseall (in the bash window)
+
+3. _tkinter users should note that Cygwin tcltk is really a Win32
+package and hence, does *not* understand Cygwin style paths.  To use the
+_tkinter module you must define the following environment variables:
+
+    $ export TCL_LIBRARY=$(cygpath -w /usr/share/tcl$version)
+    $ export TK_LIBRARY=$(cygpath -w /usr/share/tk$version)
+
+where $version is the TCL/TK version (e.g., 8.4).
+
+For another example of some cygpath coddling, see the following:
+
+    http://cygwin.com/ml/cygwin/2002-10/msg00425.html
+
+Homepage:
+
+The primary Python web site is:
+
+    http://www.python.org/
+
+Download:
+
+The primary Python ftp site is:
+
+    ftp://ftp.python.org/pub/python/
+
+Mailing Lists:
+
+Please report problems, suggestions, etc. dependent on their nature to
+one of the following:
+
+    python-list@python.org
+    cygwin@cygwin.com
+
+Maintainer:
+
+    Jason Tishler <jason@tishler.net>

@@ -1,0 +1,34 @@
+/obj//cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/admin/admin_menu.o:  \
+ /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/admin/admin_menu.c \
+  /cygdrive/D/PosPlatform/m90s/xGui\inc\mainmenu.h \
+  /cygdrive/D/PosPlatform/m90s/xGui\inc\/xgui_pub.h \
+  /cygdrive/D/PosPlatform/m90s/pub\pub.h \
+  /cygdrive/D/PosPlatform/m90s/xgui\inc\ime.h \
+  /cygdrive/D/PosPlatform/m90s/xgui\inc\menu.h \
+  /cygdrive/D/PosPlatform/m90s/xgui\inc\/2ddraw.h \
+  /cygdrive/D/PosPlatform/m90s/xgui\inc\/res.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/admin\setting\admin_set_page.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/manager\manager_menu.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/manager\manager_func.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/pub\appdef.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/admin/admin_menu.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/admin/setting\admin_set_func.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/admin/setting\MFPos_para.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/admin/keydownload\keydownload.h \
+  /cygdrive/D/PosPlatform/m90s/AppPub\inc\ex_convert.h \
+  /cygdrive/D/PosPlatform/m90s/AppPub\inc\/pub_def.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal\manage\manage_func.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/pub\security\security_func.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal\print\print_management.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/page\input_num_page.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal\comm\comm_func.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal\comm\/comm_define.h \
+  /cygdrive/D/PosPlatform/m90s/pub\tlv\tlv_func.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal\comm\comm_proc.h \
+  /cygdrive/D/PosPlatform/m90s/pub\osl\inc\osl_time.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/page\commpage\comm_page.h \
+  /cygdrive/D/PosPlatform/m90s/xGui/inc/messagebox.h \
+  /cygdrive/D/PosPlatform/m90s/xGui\inc\message.h \
+  /cygdrive/D/PosPlatform/m90s/xGui\inc\/messagedatastruct.h \
+  /cygdrive/D/PosPlatform/m90s/xGui\inc\xgui_key.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/page\read_card_page.h

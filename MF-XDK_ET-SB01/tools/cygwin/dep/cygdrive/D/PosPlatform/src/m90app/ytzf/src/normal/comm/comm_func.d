@@ -1,0 +1,27 @@
+/obj//cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/comm/comm_func.o:  \
+ /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/comm/comm_func.c \
+  /cygdrive/D/PosPlatform/m90s/ucosii\ucos_ii.h \
+  /cygdrive/D/PosPlatform/m90s/pub\pub.h \
+  /cygdrive/D/PosPlatform/m90s/pub\osl\inc\osl_time.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/admin\setting\admin_set_func.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/comm/comm_func.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/comm/comm_define.h \
+  /cygdrive/D/PosPlatform/m90s/pub\tlv\tlv_func.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/comm/msg\comm_msg_tpdu.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/comm/msg\comm_msg_8583.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/comm/msg\comm_msg_check.h \
+  /cygdrive/D/PosPlatform/m90s/net\inc\mf_sock.h \
+  /cygdrive/D/PosPlatform/m90s/net\inc\mf_net.h \
+  /cygdrive/D/PosPlatform/m90s/net\inc\mf_ssl.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/page\commpage\comm_page.h \
+  /cygdrive/D/PosPlatform/m90s/xGui/inc/messagebox.h \
+  /cygdrive/D/PosPlatform/m90s/xGui/inc/xgui_pub.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/pub\tracedef.h \
+  /cygdrive/D/PosPlatform/m90s/pub\osl\inc\osl_log.h \
+  /cygdrive/D/PosPlatform/m90s/atc\inc\atc_gprs.h \
+  /cygdrive/D/PosPlatform/m90s/modem\src\modem_comm.h \
+  /cygdrive/D/PosPlatform/m90s/pub\inc\taskdef.h \
+  /cygdrive/D/PosPlatform/m90s/pub\osl\inc\osl_BaseParam.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/pub\pub_misc.h \
+  /cygdrive/D/PosPlatform/m90s/pub\common\misc\inc\mfmalloc.h \
+  /cygdrive/D/PosPlatform/m90s/AppPub\upaypage\ap_misc_page.h

@@ -1,0 +1,29 @@
+/obj//cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/print/sign_fun.o:  \
+ /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/print/sign_fun.c \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/print/sign_fun.h \
+  /cygdrive/D/PosPlatform/m90s/pub\tlv\tlv_func.h \
+  /cygdrive/D/PosPlatform/m90s/pub\pub.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/print/..\data\data_define.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/pub\tracedef.h \
+  /cygdrive/D/PosPlatform/m90s/pub\osl\inc\osl_log.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/normal/print/..\comm\comm_define.h \
+  /cygdrive/D/PosPlatform/m90s/emv\inc\emv_interface.h \
+  /cygdrive/D/PosPlatform/m90s/emv\inc\/define.h \
+  /cygdrive/D/PosPlatform/m90s/AppPub/inc/mf_basic.h \
+  /cygdrive/D/PosPlatform/m90s/AppPub/inc/pub_def.h \
+  /cygdrive/D/PosPlatform/m90s/AppPub/inc/pub_define.h \
+  /cygdrive/D/PosPlatform/m90s/pub/common/misc/inc/mfmalloc.h \
+  /cygdrive/D/PosPlatform/m90s/AppPub/inc/mf_basic.h \
+  /cygdrive/D/PosPlatform/m90s/emv\inc\/emv_tag.h \
+  /cygdrive/D/PosPlatform/m90s/emv\inc\/emv_err_code.h \
+  /cygdrive/D/PosPlatform/m90s/AppPub/inc/struct_hashtable.h \
+  /cygdrive/D/PosPlatform/m90s/AppPub/inc/pub_define.h \
+  /cygdrive/D/PosPlatform/m90s/AppPub/inc/ex_convert.h \
+  /cygdrive/D/PosPlatform/m90s/AppPub/inc/dev_file.h \
+  /cygdrive/D/PosPlatform/m90s/AppPub/inc/printfdebug.h \
+  /cygdrive/D/PosPlatform/m90s/pub/osl/inc/osl_log.h \
+  /cygdrive/D/PosPlatform/m90s/AppPub/inc/struct_tlv.h \
+  /cygdrive/D/PosPlatform/m90s/AppPub/inc/struct_hashtable.h \
+  /cygdrive/D/PosPlatform/m90s/AppPub/inc/ex_crypto.h \
+  /cygdrive/D/PosPlatform/m90s/Platform/inc/driver\mf_rtc.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/admin\setting\admin_set_func.h

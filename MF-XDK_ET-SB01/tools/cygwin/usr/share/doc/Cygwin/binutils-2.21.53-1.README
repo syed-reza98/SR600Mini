@@ -1,0 +1,95 @@
+Binutils README
+Collated by Chris Faylor
+
+== For binutils ==
+
+* Add support for displaying the contents of .debug.macro sections.
+
+* Add --preprocessor-arg option to windres to specify additional options
+  passed to preprocessor.
+
+* Add --dwarf-start and --dwarf-end to readelf and objdump.  These are used by
+  the new Emacs mode, see dwarf-mode.el.
+
+Changes in 2.21:
+
+* Add --interleave-width option to objcopy to allowing copying a range of
+  bytes from the input to the output with the --interleave option.
+
+* Add support for the TMS320C6000 (TI C6X) processor family.
+
+* Readelf can now display ARM unwind tables (.ARM.exidx / .ARM.extab) using
+  the -u / --unwind option.
+
+* Add --dyn-syms to readelf to dump dynamic symbol table.
+
+* A new tool - elfedit - has been added to directly manipulate ELF format
+  binaries.
+
+* Add to dlltool .def file feature of aliasing PE internal symbol name by
+  '== <ID>' option.
+
+* Add a new command line option -a / --addresses to addr2line to display the
+  address before function name or source filename.
+
+* Add a new command line option -p / --pretty-print to addr2line to have
+  a more human readable output.
+
+* The hppa/som targets can now be compiled on any host.
+
+== For ld ==
+
+* INPUT_SECTION_FLAGS has been added to the linker script language
+to allow selection of input sections by section header section flags.
+
+* Add support for the Tilera TILEPRO and TILE-Gx architectures.
+
+* Added SORT_BY_INIT_PRIORITY to the linker script language to permit
+sorting sections by numerical value of the GCC init_priority attribute
+encoded in the section name.
+
+Changes in 2.21:
+
+* Linker script expression evaluation is somewhat more sane.  This may
+  break scripts that depend on quirks of the old expression evaluation.
+
+* Turn off underscoring for x86_64 PE+-COFF targets.  For old behavior the
+  option --enable-leading-mingw64-underscores can be used on configure of
+  bfd.
+
+* Add support for the TMS320C6000 (TI C6X) processor family.
+
+* --add-needed renamed to --copy-dt-needed-entries in order to avoid confusion
+  with --as-needed option.
+
+* Extend .def file syntax by '== <ID>' for imports and exports. This allows
+  to alias the import/export table name written in PE image.
+
+* Add --exlcude-all-symbols option to PE based linkers.  This prevents all
+  symbols from automatically being exported.
+
+* Add support for the Renesas RX processor.
+
+* Add support for alpha-vms target.
+
+== For gas ==
+
+* Add support for the Tilera TILEPRO and TILE-Gx architectures.
+
+Changes in 2.21:
+
+* Gas no longer requires doubling of ampersands in macros.
+
+* Add support for the TMS320C6000 (TI C6X) processor family.
+
+* GAS now understands an extended syntax in the .section directive flags
+  for COFF targets that allows the section's alignment to be specified.  This
+  feature has also been backported to the 2.20 release series, starting with
+  2.20.1.
+
+* Add support for the Renesas RX processor.
+
+* New command line option, --compress-debug-sections, which requests
+  compression of DWARF debug information sections in the relocatable output
+  file.  Compressed debug sections are supported by readelf, objdump, and
+  gold, but not currently by Gnu ld.

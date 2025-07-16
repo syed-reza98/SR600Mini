@@ -1,0 +1,69 @@
+doxygen
+------------------------------------------
+Doxygen is a documentation system for C++, C, Java, Objective-C, Python,
+IDL (Corba and Microsoft flavors), Fortran, VHDL, PHP, C#, and to some
+extent D.  It extracts the documentation from specially-formatted code
+comments in the source files in these languages.  Primary output formats
+for the generated documentation are HTML and LaTeX.  It can also output
+PDF, PostScript, compressed HTML, RTF and Unix man pages.
+
+Runtime requirements:
+  cygwin-1.7
+
+Build requirements:
+  binutils
+  bison-2.3 or newer
+  cygport
+  gcc-core-4
+  flex-2.5 or newer
+  libiconv-devel
+  make-3.81 or newer
+  perl-5.8 or newer
+  sed-4.1 or newer
+  tetex-3.0 or newer
+
+Canonical website:
+  http://doxygen.org/
+
+Canonical download:
+  http://doxygen.org/download.html
+
+-------------------------------------------
+
+Build instructions:
+  unpack doxygen-1.6.1-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./doxygen-1.6.1-1.cygport all
+
+This will create:
+  /usr/src/doxygen-1.6.1-1.tar.bz2
+  /usr/src/doxygen-1.6.1-1-src.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(doxygen)
+  /usr/bin/doxygen.exe
+  /usr/bin/doxytag.exe
+  /usr/man/man1/doxygen.1
+  /usr/man/man1/doxytag.1
+  /usr/man/man1/doxywizard.1
+  /usr/share/doc/doxygen-1.6.1/INSTALL
+  /usr/share/doc/doxygen-1.6.1/LICENSE
+  /usr/share/doc/doxygen-1.6.1/README
+
+------------------
+
+Port Notes:
+
+----- version 1.6.1-1 -----
+Version bump
+
+----- version 1.5.5-1 -----
+First version maintained by Warren Young, built with Cygport.
+
+
+Cygwin port maintained by Warren Young

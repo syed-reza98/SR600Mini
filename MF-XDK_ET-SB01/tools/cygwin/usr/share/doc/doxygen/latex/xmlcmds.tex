@@ -1,0 +1,60 @@
+Doxygen supports most of the XML commands that are typically used in C\# code comments. The XML tags are defined in Appendix E of the \href{http://www.ecma-international.org/publications/standards/Ecma-334.htm}{\tt ECMA-\/334} standard, which defines the C\# language. Unfortunately, the specification is not very precise and a number of the examples given are of poor quality.
+
+Here is the list of tags supported by doxygen:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily $<$c$>$} Identifies inline text that should be rendered as a piece of code. Similar to using {\ttfamily $<$tt$>$}text{\ttfamily $<$/tt$>$}. 
+\item {\ttfamily $<$code$>$} Set one or more lines of source code or program output. Note that this command behaves like {\ttfamily $\backslash$code ... $\backslash$endcode} for C\# code, but it behaves like the HTML equivalent {\ttfamily $<$code$>$...$<$/code$>$} for other languages. 
+\item {\ttfamily $<$description$>$} Part of a {\ttfamily $<$list$>$} command, describes an item. 
+\item {\ttfamily $<$example$>$} Marks a block of text as an example, ignored by doxygen. 
+\item {\ttfamily $<$exception cref=\char`\"{}member\char`\"{}$>$} Identifies the exception a method can throw. 
+\item {\ttfamily $<$include$>$} Can be used to import a piece of XML from an external file. Ignored by doxygen at the moment. 
+\item {\ttfamily $<$item$>$} List item. Can only be used inside a {\ttfamily $<$list$>$} context. 
+\item {\ttfamily $<$list type=\char`\"{}type\char`\"{}$>$} Starts a list, supported types are {\ttfamily bullet} or {\ttfamily number} and {\ttfamily table}. A list consists of a number of {\ttfamily $<$item$>$} tags. A list of type table, is a two column table which can have a header. 
+\item {\ttfamily $<$listheader$>$} Starts the header of a list of type \char`\"{}table\char`\"{}. 
+\item {\ttfamily $<$para$>$} Identifies a paragraph of text. 
+\item {\ttfamily $<$param name=\char`\"{}paramName\char`\"{}$>$} Marks a piece of text as the documentation for parameter \char`\"{}paramName\char`\"{}. Similar to using \hyperlink{commands_cmdparam}{$\backslash$param}. 
+\item {\ttfamily $<$paramref name=\char`\"{}paramName\char`\"{}$>$} Refers to a parameter with name \char`\"{}paramName\char`\"{}. Similar to using \hyperlink{commands_cmda}{$\backslash$a}. 
+\item {\ttfamily $<$permission$>$} Identifies the security accessibility of a member. Ignored by doxygen. 
+\item {\ttfamily $<$remarks$>$} Identifies the detailed description. 
+\item {\ttfamily $<$returns$>$} Marks a piece of text as the return value of a function or method. Similar to using \hyperlink{commands_cmdreturn}{$\backslash$return}. 
+\item {\ttfamily $<$see cref=\char`\"{}member\char`\"{}$>$} Refers to a member. Similar to \hyperlink{commands_cmdref}{$\backslash$ref}. 
+\item {\ttfamily $<$seealso cref=\char`\"{}member\char`\"{}$>$} Starts a \char`\"{}See also\char`\"{} section referring to \char`\"{}member\char`\"{}. Similar to using \hyperlink{commands_cmdsa}{$\backslash$sa} member. 
+\item {\ttfamily $<$summary$>$} Identifies the brief description. Similar to using \hyperlink{commands_cmdbrief}{$\backslash$brief}. 
+\item {\ttfamily $<$term$>$} Part of a {\ttfamily $<$list$>$} command. 
+\item {\ttfamily $<$typeparam name=\char`\"{}paramName\char`\"{}$>$} Marks a piece of text as the documentation for type parameter \char`\"{}paramName\char`\"{}. Similar to using \hyperlink{commands_cmdparam}{$\backslash$param}. 
+\item {\ttfamily $<$typeparamref name=\char`\"{}paramName\char`\"{}$>$} Refers to a parameter with name \char`\"{}paramName\char`\"{}. Similar to using \hyperlink{commands_cmda}{$\backslash$a}. 
+\item {\ttfamily $<$value$>$} Identifies a property. Ignored by doxygen. 
+\end{DoxyItemize}
+
+Here is an example of a typical piece of code using some of the above commands:
+
+
+\begin{DoxyCode}
+/// <summary>
+/// A search engine.
+/// </summary>
+class Engine
+{
+  /// <summary>
+  /// The Search method takes a series of parameters to specify the search criter
+      ion
+  /// and returns a dataset containing the result set.
+  /// </summary>
+  /// <param name="connectionString">the connection string to connect to the
+  /// database holding the content to search</param>
+  /// <param name="maxRows">The maximum number of rows to
+  /// return in the result set</param>
+  /// <param name="searchString">The text that we are searching for</param>
+  /// <returns>A DataSet instance containing the matching rows. It contains a max
+      imum
+  /// number of rows specified by the maxRows parameter</returns>
+  public DataSet Search(string connectionString, int maxRows, int searchString)
+  {
+    DataSet ds = new DataSet();
+    return ds;
+  }
+}
+\end{DoxyCode}
+ 

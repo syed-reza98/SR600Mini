@@ -1,0 +1,25 @@
+/obj//cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/page/read_card_page.o:  \
+ /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/page/read_card_page.c \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/page/standby_page.h \
+  /cygdrive/D/PosPlatform/m90s/xgui\inc\2ddraw.h \
+  /cygdrive/D/PosPlatform/m90s/xgui\inc\/xgui_pub.h \
+  /cygdrive/D/PosPlatform/m90s/pub\pub.h \
+  /cygdrive/D/PosPlatform/m90s/xgui\inc\/res.h \
+  /cygdrive/D/PosPlatform/m90s/xgui\inc\message.h \
+  /cygdrive/D/PosPlatform/m90s/xgui\inc\/messagedatastruct.h \
+  /cygdrive/D/PosPlatform/m90s/xgui\inc\xgui_key.h \
+  /cygdrive/D/PosPlatform/m90s/pub\argot\inc\argot.h \
+  /cygdrive/D/PosPlatform/m90s/pub\osl\inc\osl_time.h \
+  /cygdrive/D/PosPlatform/m90s/pub\osl\inc\osl_timer.h \
+  /cygdrive/D/PosPlatform/m90s/pub\osl\inc\/osl_timerdatastruct.h \
+  /cygdrive/D/PosPlatform/m90s/pub\osl\inc\osl_BaseParam.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/pub\tracedef.h \
+  /cygdrive/D/PosPlatform/m90s/pub\osl\inc\osl_log.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/pub\appdef.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/pub\pub_misc.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/page/upaypage\inputcard_page.h \
+  /cygdrive/D/PosPlatform/m90s/Platform/inc/driver\mf_magtek.h \
+  /cygdrive/D/PosPlatform/m90s/Platform/inc/driver/mf_supply_power.h \
+  /cygdrive/D/PosPlatform/m90s/Platform/inc/driver/mf_simple_rfid.h \
+  /cygdrive/D/PosPlatform/m90s/pub\common\misc\inc\mfmalloc.h \
+  /cygdrive/D/PosPlatform/m90s/../src/m90app/ytzf/src/admin/setting/admin_set_func.h

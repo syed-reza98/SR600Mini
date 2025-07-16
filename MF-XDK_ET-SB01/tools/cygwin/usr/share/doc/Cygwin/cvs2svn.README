@@ -1,0 +1,46 @@
+cvs2svn
+------------------------------------------
+cvs2svn is a tool for migrating a CVS repository to Subversion or git. 
+The main design goals are robustness and 100% data preservation. cvs2svn 
+can convert just about any CVS repository.
+
+Runtime requirements:
+  python
+  subversion
+
+Build requirements:
+  cygport-0.9.83-1
+  python
+
+Canonical website:
+  http://cvs2svn.tigris.org/
+
+Canonical download:
+  http://cvs2svn.tigris.org/servlets/ProjectDocumentList
+
+-------------------------------------------
+
+Build instructions:
+  unpack cvs2svn-2.3.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./cvs2svn-2.3.0-X.cygport all
+
+This will create:
+  /usr/src/cvs2svn-2.3.0-X-src.tar.bz2
+  /usr/src/cvs2svn-2.3.0-X.tar.bz2
+
+-------------------------------------------
+
+Port Notes:
+
+----- version 2.3.0-1 -----
+Version bump, built for Python 2.6.
+
+----- version 2.1.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

@@ -1,0 +1,61 @@
+util-linux
+------------------------------------------
+util-linux is a random collection of Linux utilities.
+
+Runtime requirements:
+  cygwin-1.7.5-1
+  libgcc1-4.3.4-3
+  libintl8-0.17-11
+  libncursesw10-5.7-18
+  zlib0-1.2.3-10
+  perl
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.65-1
+  automake1.11-1.11.1-1
+  binutils-2.20.51-2
+  cygport-0.9.85-1
+  gcc4-core-4.3.4-3
+  gettext-devel-0.17-11
+  make-3.81-2
+  sed-4.2.1-1
+
+Canonical homepage:
+  http://kernel.org/~kzak/util-linux-ng/
+
+Canonical download:
+  ftp://ftp.kernel.org/pub/linux/utils/util-linux-ng/
+
+-------------------------------------------
+
+Build instructions:
+  unpack util-linux-2.17.2-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./util-linux-2.17.2-X.cygport all
+
+This will create:
+  /usr/src/libblkid1-2.17.2-X.tar.bz2
+  /usr/src/libblkid-devel-2.17.2-X.tar.bz2
+  /usr/src/libuuid1-2.17.2-X.tar.bz2
+  /usr/src/libuuid-devel-2.17.2-X.tar.bz2
+  /usr/src/util-linux-2.17.2-X-src.tar.bz2
+  /usr/src/util-linux-2.17.2-X.tar.bz2
+
+-------------------------------------------
+
+Port Notes:
+
+----- version 2.17.2-1 -----
+Version bump.
+Now provides libblkid and libuuid (previously from e2fsprogs).
+
+----- version 2.15.1-1 -----
+Version bump, built for Cygwin 1.7.
+Removed wall(1) which conflicted with sysvinit.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
