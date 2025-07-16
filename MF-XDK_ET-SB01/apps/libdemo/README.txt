@@ -1,0 +1,1 @@
+The directory name is the name of the final library compiled.

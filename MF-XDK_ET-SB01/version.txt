@@ -1,0 +1,90 @@
+2025-07-10 - Release
+AppVer: V1.7.7
+SysVer: YQ06D-V3.7.1_O1.7.8
+1. Support download dukpt(cmd 54) from master pos
+
+2025-06-11
+SysVer: YQ06D-V3.7.0_O1.7.8
+1. Modify the issue of separate control for the brightness of the front and rear screens
+AppVer: V1.7.6
+1. Modify input PIN in safe mode, not respond volume keys
+
+2025-05-07
+AppVer: V1.7.5
+1. Added ntag function example
+2. Modify cjson interface to parse json message
+
+2025-05-07
+XposVer: O1.7.7
+1. RKI adds parameters for switching release certificates
+2. Optimize SBI track encryption
+
+2025-05-07
+SysVer: YQ06D-V3.6.8_O1.7.5
+1. Add the ability to recognize ntag analog cards
+
+2025-03-26 Debug
+SysVer: YQ06D-V3.6.7_O1.7.2
+1. Solve the problem of lagging audio in different formats
+2. Add the interface void auxlcd_blocklight_ctrl_init (int val);
+
+AppVer: V1.7.2
+1.Modified the issue of being unable to enter sleep mode on the QR code page
+
+2025-03-18 Releasee
+SysVer: YQ06D-V3.6.6_O1.7.2，Driver Ver: V2.1.1
+1.Remove the display of 4G lock frequency band flag and battery information flag from the tms heartbeat data version field
+
+AppVer: V1.7.1
+1.Support pin security mode
+
+2025-03-11 Release
+SysVer: YQ06D-V3.6.3_O1.7.1，Driver Ver: V2.1.0
+1. Update lock band function
+2. Add a field representing battery information to the data version in TMS heartbeat
+AppVer: V1.6.9
+1.Support modify the main screen startup logo
+2.Devices that support card swiping on the screen, add icon display on the card reading page
+3.Modify the HTTP communication receiving interface to support packet reception
+
+2025-03-04 Release
+SysVer: YQ06D-V3.6.0_O1.6.8，Driver Ver: V2.0.7
+1.Optimize code space (sha1、md5)
+2.Add lock band function
+3.Add WiFi switch to 4G, 4G switch to WiFi interface
+
+2025-02-21
+AppVer: V1.6.7
+1.release memory when request_id retrieval fails
+
+2025-01-23
+AppVer: V1.6.6
+1.Remove status updates and will messages
+SysVer: YQ06D-V3.5.6_O1.6.7，Driver Ver: V2.0.3
+1.Support card swiping on the front screen
+
+2024-12-04
+SysVer: YQ06D-V3.5.3_O1.6.2
+1.Resolve some SIM cards abnormal network issues when switching to 4G mode after restarting the device in WiFi mode
+
+2024-12-02
+AppVer: V1.6.1
+1. Resolve the issue of incorrect password length returned when entering password
+
+SysVer: YQ06D-V3.5.2_O1.6.2，Driver Ver: V2.0.2
+1.Resolve the issue of lost startup logo
+
+2024-10-17
+AppVer: V1.5.8
+1. Optimize the TMS upgrade page\low battery prompt page
+
+SysVer: YQ06D-V3.5.1_O1.5.1(Debug)，Driver Ver: V2.0.1
+1.Optimize TMS upgrade decompression page
+2.Solve after successfully upgrading and decompressing the TMS, immediately enter sleep mode
+
+2024-08-15 SDK optimization
+Delete videos, compile tools etc. (download from server)
+
+2024-08-02 - Release 
+EMV Ver: MF_QP_VI_MC_AM V1.3.0
+EMV Support VISA/QPBOC/MASTER/AMEX

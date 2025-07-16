@@ -1,0 +1,11 @@
+include $(ENV_PATH)/makefile_env.inc
+
+#project path, compilation output path (can be brought in by make as a parameter)
+PROJECT_PATH=$(WORKSPACE_PATH)/apps/$(TARGET_NAME)
+
+#The name of the target file that was generated
+TARGET_IMAGE=$(TARGET_PATH)/$(TARGET_NAME).a
+
+TARGET_TYPE=
+
+include $(ENV_PATH)/makefile_end.inc
